@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+div#top-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	background-color: antiquewhite;
+}
+
+button a{
+	font-family: 'Lobster', Courier, monospace, sans-serif;
+	text-decoration: none;
+	color: white;
+}
