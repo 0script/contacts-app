@@ -1,5 +1,14 @@
 <?php
 
+    function processAddContactForm(){
+
+        if(isset($_POST['firstname'])){
+            echo "Data received";
+        }   
+    }
+
+    processAddContactForm();
+
     echo '
         <form id="addcontactform" class="row g-3>
             <div class="col-md-6">
@@ -40,8 +49,10 @@
             <div class="col-md-4">
                 <label for="inputState" class="form-label">State</label>
                 <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                    <option selected>Select State...</option>
+                    <option>Kigali</option>
+                    <option>Giseni</option>
+                    <option>Muzanze</option>
                 </select>
             </div>
             
@@ -60,14 +71,8 @@
             </div>
             
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary" id="submit-contact">Sign in</button>
             </div>
         </form>';
-
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $firstname = test_input($_POST["firstname"]);
-            
-            echo $firstname;
-        }
 
 ?>
